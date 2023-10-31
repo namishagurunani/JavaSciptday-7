@@ -3,8 +3,9 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(black,transparent);
+    background-image: linear-gradient(rgb(0, 0, 0),transparent);
     height: 100vh;
+    position: relative;
 }
 .container {
     max-width: 600px;
@@ -15,11 +16,15 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     background-color: transparent;
+    position: relative;
 }
 h1 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    color: #dc0c0c;
+    font-family: 'Comic Sans MS', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 textarea {
     width: 100%;
@@ -30,3 +35,29 @@ textarea {
     resize: vertical;
     min-height: 200px;
 }
+.theme{
+    padding-left: 700px;
+ }
+ .light {
+    background-color: #fff;
+    color: #333;
+}
+/* Dark Theme */
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     background-image: linear-gradient(to left, rgb(240, 1, 1),transparent,rgb(240, 1, 1));
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+  }
+  select option{
+    background-color: rgb(255, 129, 127);
+    position: relative;
+  }

@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information Card</title>
+    <title>User Information Card</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="theme">
-        <label for="themeSelect">Select Theme:</label>
         <select id="themeSelect">
+            <option value="" selected="" disabled="">select theme</option>
             <option value="light">Light</option>
             <option value="dark">Dark</option>
         </select>
     </div>
+    <div class="information-container">
     <div class="card light">
         <h2>User Card</h2>
         <form id="userForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required><br>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required><br>
+            <label for="country">Country:</label>
+            <input type="text" id="country" required><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" required><br>
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" required><br>
             <label for="village">Village:</label>
@@ -30,11 +37,15 @@
     </div>
     <div class="card light" id="userCard">
         <h2>User Information</h2>
-        <p>Name: <span id="displayedName"></span></p>
+        <p>First Name: <span id="displayedFirstName"></span></p>
+        <p>Last Name: <span id="displayedLastName"></span></p>
+        <p>Country: <span id="displayedCountry"></span></p>
+        <p>State: <span id="displayedState"></span></p>
         <p>Phone Number: <span id="displayedPhone"></span></p>
         <p>Village: <span id="displayedVillage"></span></p>
         <p>City: <span id="displayedCity"></span></p>
     </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>

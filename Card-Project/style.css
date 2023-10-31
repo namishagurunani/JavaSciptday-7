@@ -1,3 +1,5 @@
+/* Default styles for larger screens */
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -5,24 +7,86 @@ body {
     align-items: center;
     justify-content: center;
 }
+.information-container{
+    display: flex;
+    flex-direction: row;
+  }
+
 .card {
-    width: 300px;
+    width: 350px;
     padding: 20px;
     border: 1px solid #ccc;
     margin: 20px;
     box-shadow: 0 0 5px #ccc;
     background-color: #fff;
 }
+
+/* Header styles for larger screens */
+h2 {
+    color: #dc0c0c;
+    font-family: 'Comic Sans MS', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 /* Light Theme */
 .light {
-    background-color: #fff;
-    color: #333;
+    background-color: transparent;
 }
+
 /* Dark Theme */
 .dark {
     background-color: #333;
     color: #fff;
 }
-.theme{
-   padding-left: 700px;
+
+/* Select styles for larger screens */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: linear-gradient(to left, rgb(235, 137, 137), transparent, rgb(235, 137, 137));
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+}
+
+select option {
+    background-color: rgb(255, 127, 127);
+    position: relative;
+}
+
+/* Input and button styles for larger screens */
+input {
+    padding: 5px;
+    margin-bottom: 20px; /* Adjust spacing */
+}
+
+button {
+    background: none;
+    background-color: rgb(216, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+}
+
+/* Additional responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%; /* Adjust card width for smaller screens */
+    }
+    .information-container{
+        flex-direction: column;
+      }
+    input {
+        width: 100%; /* Make input fields expand to full width */
+        margin-bottom: 10px; /* Reduce spacing for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Make the button expand to full width */
+    }
 }
